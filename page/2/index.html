@@ -178,15 +178,21 @@
     </nav>
 </header>
 
-
-
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover about-cover" style="background-image: url('/medias/cover.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col s12 m12 l12">
+            <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
                 <div class="brand">
-                    <div class="description center-align post-title">
-                        set up git
+                    <div class="title center-align">
+                    
+                        Share Ideas
+                    
+                    </div>
+
+                    <div class="description center-align">
+                    
+                        stay hungry stay foolish
+                    
                     </div>
                 </div>
             </div>
@@ -194,155 +200,127 @@
     </div>
 </div>
 
+<script>
+// Dynamically switch banner pictures every day.
+$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+</script>
 
-
-<main class="container content">
+<main class="content">
 
     
-    <!-- 文章内容详情 -->
-<div id="artDetail">
-    <div class="card">
-        <div class="card-content article-info">
+    <div class="container notice">
+        <div class="card">
+            <div class="card-content">
+                <i class="fa fa-volume-up fa-lg fa-fw text-color"></i>The best preparation for tomorrow is doing your best today.
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
             
-            <div class="post-info">
-                
-
-                <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-10-06
-                </span>
-            </div>
-        </div>
-        <hr>
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <p>如何设置git</p>
-<p>本地:</p>
-<p>首先进入到那个文件夹里面</p>
-<p>git init-将文件夹初始化成git仓库</p>
-<p>git add <file>-将文件添加到暂存区</file></p>
-<p>git status-查看暂存区的状态</p>
-<p>git config –global user.name “”用户名<br>git config –global user.email “”邮箱</p>
-<p>git commit -m”注释”</p>
-<p>github:</p>
-<p>git clone<url>-将服务器上的项目(仓库)克隆到本地</url></p>
-<p>先在本地实施版本控制</p>
-<p>git push–将代码推送到服务器(上传代码)-分<br>享自己的成果</p>
-<p>要输入注册github的用户名和密码</p>
-<p>git pull -将服务器代码同步到本地(下载)-看<br>到他人更新</p>
-<p>其他的操作:</p>
-<p>总结<br>工作区–暂存区(缓存区)–仓库</p>
-<p>git reset HEAD <file> - 将文件从暂存区移除</file></p>
-<p>git checkout – <file> - 将暂存区文件恢复<br>到工作区 在文件夹里误删除了</file></p>
-<p>git commit -m”注释” - 将暂存区的内容提交到<br>本地仓库</p>
-<p>git log - 查看提交日志(只能查看当前版本之<br>前的版本)<br>git reflog - 查看日志(所有的版本)</p>
-<p>git reset – hard HEAD^-回到上一个版本<br>git reset – hard <id> - 回到指定版本</id></p>
-<p>–hard 工作区和暂存区完全一致</p>
-
-            </div>
-            <hr/>
-
-            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-
-<div id="article-share">
-    
-    <div class="social-share" data-disabled="qzone, qq, weibo, douban"></div>
-    
-</div>
-
-<script src="/libs/share/js/social-share.min.js"></script>
-
-            <div class="reprint">
-                <p>
-                    <span class="reprint-tip">Reprint please specify: </span>
-                    <a href="http://yoursite.com" class="b-link-green"></a>
-                    <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/10/06/setgit/" class="b-link-green">set up git</a>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">Previous</div>
-            <div class="card">
-                <a href="/2018/10/06/html/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="HTML语法">
-                        
-                        <span class="card-title">HTML语法</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">HTML结构标准中规定了网页上能够显示的内容如文字,图片,视频等
-1.概述
-123HTML是结构标准, CSS是表现标准, JS是行为标准HTML结构标准中规定了网页上能够显示的内容,如文字,图片,视频等,CSS是表现标准规定网页内容的布局</div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-06
-                        </span>
-                        <span class="publish-author">
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2018/10/06/setgit/">
+                        <div class="card-image">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            于梦娇
                             
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">Next</div>
-            <div class="card">
-                <a href="/2018/10/06/JQuery,AJAX/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="AJAX">
-                        
-                        <span class="card-title">AJAX</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">AJAX 是与服务器交换数据的技术，它在不重载全部页面的情况下，实现了对部分网页的更新。
-1234567891011121314151617181920212223AJAXAJAX 是与服务器交换数据的技术，它在不重载全部页面的情况下，实现</div>
-                    <div class="publish-info">
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="set up git">
+                            
+                            <span class="card-title">set up git</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary">如何设置git
+本地:
+首先进入到那个文件夹里面
+git init-将文件夹初始化成git仓库
+git add -将文件添加到暂存区
+git</div>
+                        <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-06
                             </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            于梦娇
-                            
-                        </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-user fa-fw"></i>
+                                于梦娇
+                                
+                            </span>
+                        </div>
                     </div>
+
+                    
                 </div>
-                
             </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2018/10/06/JQuery,AJAX/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="AJAX">
+                            
+                            <span class="card-title">AJAX</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary">AJAX 是与服务器交换数据的技术，它在不重载全部页面的情况下，实现了对部分网页的更新。
+1234567891011121314151617</div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-06
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-user fa-fw"></i>
+                                于梦娇
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
         </div>
-        
-    </div>
-</article>
-</div>
-    
+    </article>
 
 </main>
+
+
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a href="/"
+               class="left btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">2 / 2</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a class="right btn-floating btn-large disabled">
+                <i class="fa fa-angle-right"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">
